@@ -16,18 +16,18 @@ public:
         int low = 1;
         sort(nums.begin(),nums.end());
         int high = nums[nums.size()-1];
-        int ans = high;
+        //int ans = high;
         while(low<=high){
             int mid = low+(high-low)/2;
             if(divisor(nums,threshold,mid)){
-                ans = mid;
+                //ans = mid;
                 high = mid-1;
             }
             else {
                 low = mid+1;
             }
         }
-        return ans;
-        
+        //return ans;
+        return low;
     }
 };
