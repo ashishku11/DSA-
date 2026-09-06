@@ -12,7 +12,7 @@ class Solution {
 public:
     vector<vector<int>> spiralMatrix(int m, int n, ListNode* head) {
         //rix.size() = matrix[0].size();
-        vector<vector<int>> matrix(m,vector<int>(n,-1));
+        vector<vector<int>> matrix(m,vector<int>(n, -1));
         int minr=0;
         int minc=0;
         int maxr=m-1;
