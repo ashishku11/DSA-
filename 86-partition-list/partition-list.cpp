@@ -27,14 +27,15 @@ public:
                 t = t->next;
                 th = th->next;
             }
-            if(t == NULL){
-                tl->next = NULL;
-                th->next = NULL;
-            }
+            // if(t == NULL){
+            //     tl->next = NULL;
+            //     th->next = NULL;
+            // }
 
         }
         //low = low->next;
         tl->next = high->next;
+        th->next = NULL;
         return low->next;
         
     }
