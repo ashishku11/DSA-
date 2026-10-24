@@ -6,8 +6,8 @@ public:
         int i=0;
         int j=n;
         while(i<=j){
-            int mid = i+(j-i)/2;
-            long long coin = 1LL* mid*(mid+1)/2;
+            long long mid = i+(j-i)/2;
+            long long coin = mid*(mid+1)/2;
             if(coin<=n) i = mid+1;
             else j=mid-1;
         }
